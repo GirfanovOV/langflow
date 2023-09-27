@@ -36,6 +36,7 @@ class HuggingFaceEndpointsComponent(CustomComponent):
                 endpoint_url=endpoint_url,
                 task=task,
                 huggingfacehub_api_token=huggingfacehub_api_token,
+                model_kwargs=model_kwargs
             )
         except Exception as e:
             raise ValueError("Could not connect to HuggingFace Endpoints API.") from e
